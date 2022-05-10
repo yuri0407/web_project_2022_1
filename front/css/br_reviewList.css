@@ -1,21 +1,19 @@
 /* common ----------------------------------------------------------------------------------------------------- */
 *{padding:0; margin: 0; box-sizing: border-box; font-family: '맑은 고딕', sans-serif; color:#333333;}
-body{height: 100%;}
+body{width: 100%; height: 100%;}
 
 li{list-style: none;}
 a{ text-decoration: none; color:inherit;}
 img{vertical-align: auto; width: 200px;}
-.wrap{min-height: 100%; padding-bottom: 19px; /* footer height */}
-
+.wrap{position:relative; width: 100%; height: 700px; margin: 0 auto;}
 
 
 /*header -----------------------------------------------------------------------------------------------------*/
-header{position:relative; display: flex; justify-content: center; padding-left: 80px;}
+header{position:relative; display: flex; justify-content: center; padding-left: 150px;}
 header, footer{display: flex; height: 100px; width: 100%; align-items: center;}
 .headerBg{position:absolute; width: 100%; height: 130px; left:0; top:100px; background: rgb(228, 89, 89); z-index: 997; display: none;}
-header h1{display: block; width: 200px; height: 40px; font-size: 0px; color:transparent;}
 
-.head{padding: 50px;}
+.head{margin-left: 50px; width: 300px;}
 .head>a:hover{color: rgb(204, 57, 57);}
 
 header nav{width: 600px; margin: 58px 0px 0px 370px;}
@@ -45,22 +43,24 @@ ul.lv2 li:hover a{color:#333; background: #fff;}
 
 
 /*content -----------------------------------------------------------------------------------------------------*/
-.content{display: block; margin-top: 3%; margin-left:27%; margin-right: 17%;  padding:5px; height: 600px;}
+.content{display: block; margin-top: 3%; margin-left:27%; margin-right: 17%;  padding:5px; height: 610px;}
 
 .content >*{width: 600px; align-items: center;}
 .content table{width: 100%; margin-top: 30px;}
 .content h2{margin-left: 0;}
 .search{width: 100%; text-align: right;}
 .content h3{font-size: 18px; font-weight: 600; margin-bottom: 10px;}
-button{padding:2px; background-color: rgb(255, 239, 239); border: 1px solid rgb(204, 57, 57); border-radius: 3px;}
+button{padding:2px; background-color: rgb(255, 239, 239); border: 1px solid rgb(204, 57, 57); border-radius: 3px; }
 button:hover{background-color: rgb(255, 219, 219);}
 
 .search>input{padding: 2px; border: 0.5px solid rgb(204, 57, 57); border-radius: 3px;}
-.search>input:focus{background-color: rgb(255, 239, 239);}
+.search>input:focus{background-color: rgb(255, 239, 239); outline: none;}
 
 table{border-collapse: collapse; border: 1.5px solid rgb(255, 218, 218);}
 th{background-color: rgb(255, 218, 218); padding: 3px;}
-td{padding: 5px;}
+td{padding: 5px; font-size: 11pt;}
+
+
 
 
 /* .notice{padding:10px;}
@@ -74,9 +74,7 @@ td{padding: 5px;}
 
 /*footer -----------------------------------------------------------------------------------------------------*/
 .fLogo{padding-left: 30px;}
-footer{position:block; height: 100px; text-align: center; background-color: rgb(255, 200, 200);}
-footer{width: 100%;}
-
+footer{display: flex; height: 100px; background-color: rgb(255, 200, 200); width: 100%;}
 
 /* .bottomLeft >*{height: 50%; line-height: 50px;}
 .bottomMenu{display: flex; justify-content: space-around;} */
