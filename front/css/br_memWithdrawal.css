@@ -10,7 +10,7 @@ img{vertical-align: auto; width: 200px;}
 
 
 /*header -----------------------------------------------------------------------------------------------------*/
-header{position:relative; justify-content: center; padding-left: 150px;}
+header{position:relative; display: flex; justify-content: center; padding-left: 150px;}
 header, footer{display: flex; height: 100px; width: 100%; align-items: center;}
 .headerBg{position:absolute; width: 100%; height: 130px; left:0; top:100px; background: rgb(228, 89, 89); z-index: 997; display: none;}
 header h1{display: block; width: 200px; height: 40px; font-size: 0px; color:transparent;}
@@ -41,29 +41,32 @@ ul.lv2 li:hover a{color:#333; background: #fff;}
 
 
 
-/* .subMenu ul{font-size: 15pt; padding-bottom: 20px;} */
-/* .subMenu ul li{width:100%; font-size: 12pt; padding: 5px; padding-left: 20px;} */
-
-
 /*content -----------------------------------------------------------------------------------------------------*/
-.content{margin-top: 5%; margin-left:32%; margin-right: 30%; margin-bottom: 188px; padding-left: 135px; padding-top: 50px; padding-right: 70px; display: block; height: 450px; border: 1px solid rgb(228, 89, 89);}
-.content table{width: 0 auto; margin-top: 30px;}
-.content h2{margin-left: 0;}
-.content h3{font-size: 18px; font-weight: 600; margin-bottom: 10px;}
+.content{
+    margin-top: 8%;
+    margin-left:30%;
+    margin-right: 30%;
+    margin-bottom: 332px;
+    padding: 50px;
+    display: block;
+    border: 2px solid rgb(228, 89, 89);}
 
+.content table{width: 0 auto; margin-top: 30px;}
+.content h2{margin-left: 0; margin-bottom: 20px;}
 
 
 button, .submit{padding:2px; background-color: rgb(255, 239, 239); border: 1px solid rgb(204, 57, 57); border-radius: 3px; width: 75px; height: 25px;}
 button:hover, .submit:hover{background-color: rgb(255, 219, 219);}
-.btn{text-align: right;}
+.btn{text-align: right; margin-top: 10px;}
 
+
+table{border-collapse: collapse;}
 th{background-color: rgb(255, 218, 218); padding: 3px;}
-td{padding: 10px;}
+td{padding: 5px; font-size: 11pt;}
 
-.textbox, .id{width: 200px; height: 25px; background-color: rgb(255, 245, 245); border: 1px solid rgb(228, 89, 89); border-radius: 3px;}
-.textbox:focus{ background-color: rgb(255, 235, 235);}
-.textbox:focus, .id:focus{outline: none;}
-.id{background-color: rgb(247, 224, 224);}
+textarea{resize: none; width: 350px; height: 250px; background-color: rgb(255, 245, 245); border: 1px solid rgb(228, 89, 89); border-radius: 3px;}
+.bName{width: 350px; height: 30px; background-color: rgb(255, 245, 245); border: 1px solid rgb(228, 89, 89); border-radius: 3px;}
+textarea:focus, .bName:focus{outline: none;}
 
 
 
