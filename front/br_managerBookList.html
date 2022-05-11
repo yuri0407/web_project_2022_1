@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+    <link rel="stylesheet" href="./css/br_managerBookList.css">
+    <script src="./script/jquery-3.6.0.js"></script>
+    <script src="./script/script.js"></script>
+	<title>도서목록</title>
+</head>
+<body>
+	<div class="wrap">
+		<!-- header 영역  --> 	
+		<header>
+			<div class="headerBg"></div>
+			<a href="#"><img src="./images/로고.png" alt="사이트로고"></a>
+			<div class="head">ooo님 안녕하세요! | <a href="#">로그아웃</a></div>
+			
+			<!-- 메인메뉴영역  -->
+			<nav>			
+			
+				<ul>
+                    <li class="lv1">
+                        <a href="#">도서</a>
+                        <ul class="lv2">
+                            <li><a href="br_bookList.html">도서목록</a></li>
+                        </ul>
+                    </li>
+                    <li class="lv1">
+                        <a href="#">고객센터</a>
+                        <ul class="lv2">
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">도서추가요청</a></li>
+                        </ul>
+                        <li class="lv1">
+                            <a href="#">공지사항</a>
+                            <ul class="lv2">
+                                <li><a href="br_noticeList.html">공지사항</a></li>
+                            </ul>
+                        </li>
+                    </li>
+					
+				</ul>
+				
+			</nav>
+
+		</header>
+		
+
+
+
+
+
+
+
+		<!-- 서브메뉴영역  -->
+
+		<div class="subMenu">			
+		
+			
+			<ul class="subLv1">
+				<li>도서</li>
+				<ul class="subLv2">
+					<li><a href="br_managerBookList.html">도서목록</a></li>
+				</ul>
+			</ul>
+			
+			<ul class="subLv1">
+				<li>고객센터</li>
+				<ul class="subLv2">
+					<li><a href="#">Q&A</a></li>
+					<li><a href="#">도서추가요청</a></li>
+				</ul>
+			</ul>
+			
+			<ul class="subLv1">
+				<li>공지사항</li>
+				<ul class="subLv2">
+					<li><a href="br_noticeList.html">공지사항</a></li>
+				</ul>
+			</ul>
+			
+			
+		</div>
+	
+	
+	
+	
+	<!-- 리뷰영역  -->
+	
+	<div class="content">
+	
+		<h2>도서목록</h2>
+	
+	
+		<!-- 검색영역 -->
+		
+		<div class="search">			
+			<label>도서명</label>
+			<input type="text" name="bName" size="30">
+			<button>검색</button>
+			<button onclick="location.href='br_writeReview.html'">등록하기</button>
+		</div>
+		
+        <div class="tablearea">
+            <table>
+                <tr>
+                    <th style="width: 3%">bNo.</th>
+                    <th style="width: 30%">도서명</th>
+                    <th style="width: 15%">저자명</th>
+                    <th style="width: 15%">출판사</th>
+                    <th style="width: 10%">출판일</th>
+                    <th style="width: 7%">분류번호</th>
+                </tr>
+                <tr class="row">
+                    <td>1</td>
+                    <td>도서명도서명도서명도서명도서명</td>
+                    <td>저자명저자명저자명</td>
+                    <td>출판사출판사출판사출판사출판사</td>
+                    <td>2022-05-11</td>
+                    <td>800</td>
+                </tr>
+
+            </table>
+        </div>
+	
+	</div>
+	
+	
+		<!-- footer 영역  -->
+		
+		<footer>
+			<a href="#"><img src="./images/로고.png" alt="사이트로고" class="fLogo"></a>
+		</footer>
+	
+	</div>
+	
+</body>
+</html>
