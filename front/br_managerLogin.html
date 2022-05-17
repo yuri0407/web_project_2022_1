@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/br_managerLogin.css">
+    <script src="./script/jquery-3.6.0.js"></script>
+    <script src="./script/script.js"></script>
+	<title>관리자 로그인</title>
+</head>
+<body>
+	
+    <div class="wrap">
+        <!-- header 영역  --> 	
+        <header>
+            <div class="headerBg"></div>
+            <a href="br_main.html"><img src="./images/로고.png" alt="사이트로고"></a>
+            <div class="head"><a href="br_login.html">로그인</a> | <a href="br_signUp.html">회원가입</a></div>
+            
+            <!-- 메인메뉴영역  -->
+	 <nav>			
+        
+		<ul>
+			<li class="lv1">
+				<a href="#">도서</a>
+				<ul class="lv2">
+					<li><a href="br_bookList.html">도서목록</a></li>
+					<li><a href="br_reviewList.html">도서리뷰</a></li>
+				</ul>
+			</li>
+			<li class="lv1">
+				<a href="#">고객센터</a>
+				<ul class="lv2">
+					<li><a href="br_questionList.html">Q&A</a></li>
+					<li><a href="br_bookRequest.html">도서추가요청</a></li>
+				</ul>
+			</li>
+			<li class="lv1">
+				<a href="#">마이페이지</a>
+				<ul class="lv2">
+					<li><a href="br_myReview.html">My리뷰</a></li>
+					<li><a href="br_updateMemInfo.html">회원정보수정</a></li>
+					<li><a href="br_memWithdrawal.html">회원탈퇴</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+		
+	</nav>
+
+</header>
+	
+	<!-- 서브메뉴영역  -->
+
+	<div class="subMenu">			
+		
+			
+		<ul class="subLv1">
+			<li>도서</li>
+			<ul class="subLv2">
+				<li><a href="br_bookList.html">도서목록</a></li>
+				<li><a href="br_reviewList.html">도서리뷰</a></li>
+			</ul>
+		</ul>
+		
+		<ul class="subLv1">
+			<li>고객센터</li>
+			<ul class="subLv2">
+				<li><a href="br_questionList.html">Q&A</a></li>
+				<li><a href="br_bookRequest.html">도서추가요청</a></li>
+			</ul>
+		</ul>
+		
+		<ul class="subLv1">
+			<li>마이페이지</li>
+			<ul class="subLv2">
+				<li><a href="br_myReview.html">My리뷰</a></li>
+				<li><a href="br_updateMemInfo.html">회원정보수정</a></li>
+				<li><a href="br_memWithdrawal.html">회원탈퇴</a></li>
+			</ul>
+		</ul>
+		
+		
+	</div>
+        
+        
+        <!-- 로그인 영역 -->
+        <div class="content">
+            <h2>관리자 로그인</h2>
+            
+            <form action="br_managerBookList.html">
+                <table>
+                    
+                    <tr>
+                        <td>관리자 번호</td>
+                        <td><input type="text" name="mNum" class="textbox"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text" name="id" class="textbox"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>비밀번호</td>
+                        <td><input type="text" name="pwd" class="textbox"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td class="btn"><input type="submit" value="로그인" class="submit"></td>
+                    </tr>
+                    
+                </table>
+            </form>
+        </div>
+	
+    </div>
+
+
+	<!-- footer 영역 -->
+	<footer>
+        <a href="br_main.html"><img src="./images/로고.png" alt="사이트로고" class="fLogo"></a>
+    </footer>
+	
+</body>
+</html>

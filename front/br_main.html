@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">	
+    <link rel="stylesheet" href="./css/br_main.css">
+    <script src="./script/jquery-3.6.0.js"></script>
+    <script src="./script/script.js"></script>
+    <title>도서리뷰사이트입니다.</title>
+</head>
+<body>
+
+    <div class="wrap">
+		<!-- header 영역  --> 	
+		<header>
+			<div class="headerBg"></div>
+			<a href="br_main.html"><img src="./images/로고.png" alt="사이트로고"></a>
+			<div class="head"><a href="br_login.html">로그인</a> | <a href="br_signUp.html">회원가입</a></div>
+			
+			<!-- 메인메뉴영역  -->
+			<nav>			
+            
+				<ul>
+					<li class="lv1">
+						<a href="#">도서</a>
+						<ul class="lv2">
+							<li><a href="br_bookList.html">도서목록</a></li>
+							<li><a href="br_reviewList.html">도서리뷰</a></li>
+						</ul>
+					</li>
+					<li class="lv1">
+						<a href="#">고객센터</a>
+						<ul class="lv2">
+							<li><a href="br_questionList.html">Q&A</a></li>
+							<li><a href="br_bookRequest.html">도서추가요청</a></li>
+						</ul>
+					</li>
+					<li class="lv1">
+						<a href="#">마이페이지</a>
+						<ul class="lv2">
+							<li><a href="br_myReview.html">My리뷰</a></li>
+							<li><a href="br_updateMemInfo.html">회원정보수정</a></li>
+							<li><a href="br_memWithdrawal.html">회원탈퇴</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+			</nav>
+	
+		</header>
+			
+	
+
+		<div class="main">
+			<h1>도서리뷰사이트에 오신 것을 환영합니다!</h1>
+		</div>
+	
+	<!-- content 영역 -->
+	<div class="content">
+		<!-- 공지사항 영역 -->
+		<div class="notice">
+			<h2>공지사항</h2>
+			<button onclick="location.href='br_noticeList.html'">more></button>
+
+			<div class="tablearea">
+				<table>
+					<tr class="row" onclick="location.href='br_noticeDetail.html'">
+						<td>신규등록도서 목록입니다.</td>
+						<td style="width: 130px">2022-05-15</td>
+					</tr>
+				</table>
+			</div>
+		
+		</div>
+	
+		<!-- 문의게시판 영역 -->
+		<div class="qna">
+			<h2>문의게시판</h2>
+			<button onclick="location.href='br_questionList.html'">more></button>
+
+			<div class="tablearea">
+				<table>
+					<tr class="row" onclick="location.href='br_questionDetail.html'">
+						<td>로그인과 관련해서 질문있습니다.</td>
+						<td style="width: 130px">2022-05-15</td>
+					</tr>
+				</table>
+			</div>
+		
+		</div>
+	</div>
+
+		
+		
+		
+     
+  </div>
+   
+   
+</div>
+  <!-- footer 영역 -->
+  <footer>
+	<a href="br_main.html"><img src="./images/로고.png" alt="사이트로고" class="fLogo"></a>
+</footer>
+	 
+</body>
+</html>

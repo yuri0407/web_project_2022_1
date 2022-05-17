@@ -1,6 +1,6 @@
 /* common ----------------------------------------------------------------------------------------------------- */
 *{padding:0; margin: 0; box-sizing: border-box; font-family: '맑은 고딕', sans-serif; color:#333333;}
-body{height: 100%;}
+body{height: 100%; overflow: overlay;}
 
 li{list-style: none;}
 a{text-decoration: none; color:inherit;}
@@ -38,15 +38,13 @@ ul.lv2 li:hover a{color:#333; background: #fff;}
 .subLv1{margin-bottom: 20px;}
 
 
-/* .subMenu ul{font-size: 15pt; padding-bottom: 20px;} */
-/* .subMenu ul li{width:100%; font-size: 12pt; padding: 5px; padding-left: 20px;} */
 
 
 /*content -----------------------------------------------------------------------------------------------------*/
 .content{display: block; margin-top: 3%; margin-left:27%; margin-right: 17%;  padding:5px;}
 
 .content >*{width: 600px; align-items: center;}
-.content table{width: 100%; margin-top: 30px;}
+.content table{width: 100%; margin-top: 20px;}
 .content h2{margin-left: 0;}
 .search{width: 100%; text-align: right;}
 .content h3{font-size: 18px; font-weight: 600; margin-bottom: 10px;}
@@ -56,10 +54,10 @@ button:hover{background-color: rgb(255, 219, 219);}
 .search>input{padding: 2px; border: 0.5px solid rgb(204, 57, 57); border-radius: 3px;}
 .search>input:focus{background-color: rgb(255, 239, 239); outline: none;}
 
-table{margin-bottom: 50px; border-collapse: collapse; border: 2px solid rgb(255, 218, 218);}
-.tablearea{height: 576px; width: 100%;}
+table{margin-bottom: 50px; border-collapse: collapse; border: 2px solid rgb(255, 218, 218); table-layout: fixed;}
+.tablearea{margin-bottom: 36px; height: 550px; width: 100%;}
 th{background-color: rgb(255, 218, 218); padding: 3px; height: 30px;}
-td{padding: 5px; font-size: 11pt;}
+td{padding: 5px; font-size: 11pt; border-bottom: 2px solid rgb(255, 218, 218);}
 
 
 

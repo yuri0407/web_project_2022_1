@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">	
+    <link rel="stylesheet" href="./css/br_idpwFind.css">
+    <script src="./script/jquery-3.6.0.js"></script>
+    <script src="./script/script.js"></script>
+	<title>아이디/비밀번호 찾기</title>
+</head>
+<body>
+	
+	<header>
+        <div class="headerBg"></div>
+		<a href="br_main.html"><img src="./images/로고.png" alt="사이트로고"></a>
+		<div class="head"><a href="br_login.html">로그인</a> | <a href="br_signUp.html">회원가입</a></div>
+        
+	
+	
+	 <!-- 메인메뉴영역  -->
+	 <nav>			
+            
+		<ul>
+			<li class="lv1">
+				<a href="#">도서</a>
+				<ul class="lv2">
+					<li><a href="br_bookList.html">도서목록</a></li>
+					<li><a href="br_reviewList.html">도서리뷰</a></li>
+				</ul>
+			</li>
+			<li class="lv1">
+				<a href="#">고객센터</a>
+				<ul class="lv2">
+					<li><a href="br_questionList.html">Q&A</a></li>
+					<li><a href="br_bookRequest.html">도서추가요청</a></li>
+				</ul>
+			</li>
+			<li class="lv1">
+				<a href="#">마이페이지</a>
+				<ul class="lv2">
+					<li><a href="br_myReview.html">My리뷰</a></li>
+					<li><a href="br_updateMemInfo.html">회원정보수정</a></li>
+					<li><a href="br_memWithdrawal.html">회원탈퇴</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+		
+	</nav>
+
+</header>
+	
+	<!-- 서브메뉴영역  -->
+
+	<div class="subMenu">			
+		
+			
+		<ul class="subLv1">
+			<li>도서</li>
+			<ul class="subLv2">
+				<li><a href="br_bookList.html">도서목록</a></li>
+				<li><a href="br_reviewList.html">도서리뷰</a></li>
+			</ul>
+		</ul>
+		
+		<ul class="subLv1">
+			<li>고객센터</li>
+			<ul class="subLv2">
+				<li><a href="br_questionList.html">Q&A</a></li>
+				<li><a href="br_bookRequest.html">도서추가요청</a></li>
+			</ul>
+		</ul>
+		
+		<ul class="subLv1">
+			<li>마이페이지</li>
+			<ul class="subLv2">
+				<li><a href="br_myReview.html">My리뷰</a></li>
+				<li><a href="br_updateMemInfo.html">회원정보수정</a></li>
+				<li><a href="br_memWithdrawal.html">회원탈퇴</a></li>
+			</ul>
+		</ul>
+		
+		
+	</div>
+
+	
+	
+	<!-- 아이디/비밀번호 찾기 영역 -->
+	<div class="content">
+	
+			<!-- 아이디 찾기 영역 -->
+			
+			<h2>아이디찾기</h2>
+			<form>
+			
+				<table>
+					<tr>
+						<td>이메일</td>
+						<td>
+							<input type="text" name="email1" class="textbox">
+						</td>
+					</tr>
+					
+					<tr>
+						<td></td>
+						<td  class="btn">
+							<input type="submit" class="submit" value="찾기">
+						</td>
+					</tr>
+				</table>
+				
+			</form>
+				
+				
+				
+			<!-- 비밀번호 찾기영역 -->
+			
+			<h2>비밀번호찾기</h2>
+			<form >
+			
+				<table>
+					<tr>
+						<td>아이디</td>
+						<td><input type="text" name="id" class="textbox"></td>
+					</tr>
+					
+					<tr>
+						<td>이메일</td>
+						<td>
+							<input type="text" name="email1" class="textbox">
+						</td>
+					</tr>
+					
+					<tr>
+						<td></td>
+						<td class="btn">
+							<input type="submit" class="submit" value="찾기">
+						</td>
+					</tr>
+				</table>
+			
+			</form>
+	</div>
+		
+	
+	
+	<!-- footer 영역  -->
+	
+	<footer>
+		<a href="br_main.html"><img src="./images/로고.png" alt="사이트로고" class="fLogo"></a>
+	</footer>
+	
+</body>
+</html>

@@ -10,7 +10,7 @@ img{vertical-align: auto; width: 200px;}
 
 
 /*header -----------------------------------------------------------------------------------------------------*/
-header{position:relative; display: flex; justify-content: center; padding-left: 150px;}
+header{position:relative; justify-content: center; padding-left: 150px;}
 header, footer{display: flex; height: 100px; width: 100%; align-items: center;}
 .headerBg{position:absolute; width: 100%; height: 130px; left:0; top:100px; background: rgb(228, 89, 89); z-index: 997; display: none;}
 header h1{display: block; width: 200px; height: 40px; font-size: 0px; color:transparent;}
@@ -41,23 +41,21 @@ ul.lv2 li:hover a{color:#333; background: #fff;}
 
 
 
-
 /*content -----------------------------------------------------------------------------------------------------*/
 .content{
-    margin-top: 5%; 
-    margin-left:33%; 
+    margin-top: 5%;
+    margin-left:32%; 
     margin-right: 30%; 
     margin-bottom: 188px; 
     padding-left: 80px; 
-    padding-top: 50px; 
-    padding-right: 70px;
+    padding-top: 40px; 
+    padding-right: 70px; 
     display: block; 
-    height: 450px;
+    height: 450px; 
     border: 1px solid rgb(228, 89, 89);
 }
-
 .content table{margin: 0 auto; width: auto; padding-top: 30px;}
-.content h2{margin-top: 10px; margin-left: 50px;}
+.content h2{margin-left: 50px; margin-top: 10px;}
 
 
 
@@ -79,3 +77,7 @@ td{padding: 10px;}
 /*footer -----------------------------------------------------------------------------------------------------*/
 .fLogo{padding-left: 30px;}
 footer{height: 100px; min-width: 1500px; background-color: rgb(255, 200, 200);}
+
+/* .bottomLeft >*{height: 50%; line-height: 50px;}
+.bottomMenu{display: flex; justify-content: space-around;} */
+/* .familySite{line-height: 100px;} */

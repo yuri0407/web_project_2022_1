@@ -3,17 +3,15 @@
 body{height: 100%; overflow: overlay;}
 
 li{list-style: none;}
-a{ text-decoration: none; color:inherit;}
+a{text-decoration: none;}
 img{vertical-align: auto; width: 200px;}
 .wrap{min-width: 1500px; height: 100%;}
-
 
 
 /*header -----------------------------------------------------------------------------------------------------*/
 header{position:relative; display: flex; justify-content: center; padding-left: 150px;}
 header, footer{display: flex; height: 100px; width: 100%; align-items: center;}
 .headerBg{position:absolute; width: 100%; height: 130px; left:0; top:100px; background: rgb(228, 89, 89); z-index: 997; display: none;}
-header h1{display: block; width: 200px; height: 40px; font-size: 0px; color:transparent;}
 
 .head{margin-left: 50px; width: 300px;}
 .head>a:hover{color: rgb(204, 57, 57);}
@@ -31,47 +29,42 @@ li.lv1:hover >a{color:#fff; background: rgb(204, 57, 57);}
 ul.lv2 li:hover a{color:#333; background: #fff;}
 
 
-
-/*submenu -----------------------------------------------------------------------------------------------------*/
-.subMenu{float: left; margin-left:10%; padding-left: 25px; padding-top: 40px; width:15%;}
-.subLv1>li{font-size: 15pt; padding: 5px; font-weight: bold; color: rgb(204, 57, 57);}
-.subLv2 li a{display:block; width: 100%; font-size: 12pt; padding:6px; padding-left: 20px; margin: 3px;}
-.subLv2 li:hover a{background-color: rgb(253, 181, 181);}
-.subLv1{margin-bottom: 20px;}
-
-
-
+.main{
+    line-height: 130px;
+    text-align: center;
+    margin-top: 30px;
+    height: 130px;
+    min-width: 1500px; 
+    background-color: rgb(255, 150, 150);
+}
+.main>h1{color: #fff; vertical-align: middle;}
 
 /*content -----------------------------------------------------------------------------------------------------*/
-.content{
-    margin-top: 5%; 
-    margin-left:33%; 
-    margin-right: 30%; 
-    margin-bottom: 188px; 
-    padding-left: 80px; 
-    padding-top: 50px; 
-    padding-right: 70px;
-    display: block; 
-    height: 450px;
-    border: 1px solid rgb(228, 89, 89);
+.notice, .qna{
+    display: inline;
+    padding: 30px;
+    padding-left: 40px;
+    margin-top: 60px;
+    margin-bottom: 127px;
+    float: left;
 }
+.notice{margin-left: 16%; width: 500px;}
+.qna{margin-left: 6%; width: 500px;}
+.notice>h2, .qna>h2{display: inline-block; margin-bottom: 10px;}
 
-.content table{margin: 0 auto; width: auto; padding-top: 30px;}
-.content h2{margin-top: 10px; margin-left: 50px;}
+
+button{margin-left: 10px; display: inline; font-size: 9pt; padding:3px; background-color: rgba(255, 239, 239, 0); border: 0; border-radius: 3px; }
+button:hover{background-color: rgb(255, 219, 219);}
 
 
+table{border-collapse: collapse; width: 430px;}
+.tablearea{height: 275px; width: auto; overflow: hidden;  background-color: rgb(255, 238, 238);}
+tr{text-align: left;}
+th{background-color: rgb(255, 218, 218); padding: 3px; height: 30px;}
+td{padding: 10px; font-size: 11pt;}
+tr.row:hover{background-color: rgb(255, 195, 195);}
 
-button, .submit{padding:2px; background-color: rgb(255, 239, 239); border: 1px solid rgb(204, 57, 57); border-radius: 3px; width: 75px; height: 25px;}
-button:hover, .submit:hover{background-color: rgb(255, 219, 219);}
-.btn{text-align: right;}
 
-th{background-color: rgb(255, 218, 218); padding: 3px;}
-td{padding: 10px;}
-
-.textbox, .id{width: 200px; height: 25px; background-color: rgb(255, 245, 245); border: 1px solid rgb(228, 89, 89); border-radius: 3px;}
-.textbox:focus{ background-color: rgb(255, 235, 235);}
-.textbox:focus, .id:focus{outline: none;}
-.id{background-color: rgb(247, 224, 224);}
 
 
 

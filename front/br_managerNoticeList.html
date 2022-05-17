@@ -1,0 +1,124 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta charset="UTF-8">	
+<link rel="stylesheet" href="./css/br_managerNoticeList.css">
+<script src="./script/jquery-3.6.0.js"></script>
+<script src="./script/script.js"></script>
+<title>공지사항</title>
+</head>
+<body>
+    <div class="wrap">
+	<!-- header 영역  -->
+	<header>
+        <div class="headerBg"></div>
+        <a href="br_managerBookList.html"><img src="./images/로고.png" alt="사이트로고"></a>
+        <div class="head">관리자님 안녕하세요! | <a href="br_main.html">로그아웃</a></div>
+        
+        <!-- 메인메뉴영역  -->
+        <nav>			
+            
+            <ul>
+                <li class="lv1">
+                    <a href="#">도서</a>
+                    <ul class="lv2">
+                        <li><a href="br_managerBookList.html">도서목록</a></li>
+                    </ul>
+                </li>
+                <li class="lv1">
+                    <a href="#">고객센터</a>
+                    <ul class="lv2">
+                        <li><a href="br_managerQuestionList.html">Q&A</a></li>
+                        <li><a href="br_managerBookRequest.html">도서추가요청</a></li>
+                    </ul>
+                    <li class="lv1">
+                        <a href="#">공지사항</a>
+                        <ul class="lv2">
+                            <li><a href="br_managerNoticeList.html">공지사항</a></li>
+                        </ul>
+                    </li>
+                </li>
+                
+            </ul>
+            
+        </nav>
+
+    </header>
+    
+
+
+
+
+
+
+
+    <!-- 서브메뉴영역  -->
+
+    <div class="subMenu">			
+    
+        
+        <ul class="subLv1">
+            <li>도서</li>
+            <ul class="subLv2">
+                <li><a href="br_managerBookList.html">도서목록</a></li>
+            </ul>
+        </ul>
+        
+        <ul class="subLv1">
+            <li>고객센터</li>
+            <ul class="subLv2">
+                <li><a href="br_managerQuestionList.html">Q&A</a></li>
+                <li><a href="br_managerBookRequest.html">도서추가요청</a></li>
+            </ul>
+        </ul>
+        
+        <ul class="subLv1">
+            <li>공지사항</li>
+            <ul class="subLv2">
+                <li><a href="br_managerNoticeList.html">공지사항</a></li>
+            </ul>
+        </ul>
+        
+        
+    </div>
+
+
+
+	<!-- 공지사항 목록 영역 -->
+    <div class="content">
+	
+		<h2>공지목록</h2>
+	
+	
+		
+		<div class="btn">		
+			<button onclick="location.href='br_insertNotice.html'">등록하기</button>
+		</div>
+
+		
+        <div class="tablearea">
+            <table>
+                <tr>
+                    <th style="width: 6%;">No.</th>
+                    <th style="width: 70%">공지제목</th>
+                    <th>날짜</th>
+                </tr>
+                <tr class="row" onclick="location.href='br_editNotice.html'">
+                    <td>1</td>
+                    <td>신규등록도서 목록입니다.</td>      
+                    <td>2022-05-15</td>
+                </tr>
+
+            </table>
+        </div>
+	
+    </div>
+</div>
+
+	<!-- footer 영역 -->
+    <footer>
+        <a href="br_managerBookList.html"><img src="./images/로고.png" alt="사이트로고" class="fLogo"></a>
+    </footer>
+
+</body>
+</html>

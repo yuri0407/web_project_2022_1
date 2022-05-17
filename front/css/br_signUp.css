@@ -10,7 +10,7 @@ img{vertical-align: auto; width: 200px;}
 
 
 /*header -----------------------------------------------------------------------------------------------------*/
-header{position:relative; display: flex; justify-content: center; padding-left: 150px;}
+header{position:relative; justify-content: center; padding-left: 150px;}
 header, footer{display: flex; height: 100px; width: 100%; align-items: center;}
 .headerBg{position:absolute; width: 100%; height: 130px; left:0; top:100px; background: rgb(228, 89, 89); z-index: 997; display: none;}
 header h1{display: block; width: 200px; height: 40px; font-size: 0px; color:transparent;}
@@ -41,29 +41,26 @@ ul.lv2 li:hover a{color:#333; background: #fff;}
 
 
 
-
 /*content -----------------------------------------------------------------------------------------------------*/
 .content{
-    margin-top: 5%; 
-    margin-left:33%; 
-    margin-right: 30%; 
+    margin-top: 5%;
+    margin-left:32%; 
+    margin-right: 26%; 
     margin-bottom: 188px; 
     padding-left: 80px; 
     padding-top: 50px; 
-    padding-right: 70px;
+    padding-right: 70px; 
     display: block; 
-    height: 450px;
+    height: 450px; 
     border: 1px solid rgb(228, 89, 89);
 }
 
-.content table{margin: 0 auto; width: auto; padding-top: 30px;}
-.content h2{margin-top: 10px; margin-left: 50px;}
-
-
+.content table{margin: 0 auto; width: auto;}
+.content h2{margin-top: 10px; margin-left: 15px; margin-bottom: -5px;}
 
 button, .submit{padding:2px; background-color: rgb(255, 239, 239); border: 1px solid rgb(204, 57, 57); border-radius: 3px; width: 75px; height: 25px;}
 button:hover, .submit:hover{background-color: rgb(255, 219, 219);}
-.btn{text-align: right;}
+.btn{text-align: center;}
 
 th{background-color: rgb(255, 218, 218); padding: 3px;}
 td{padding: 10px;}

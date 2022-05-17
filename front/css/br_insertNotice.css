@@ -1,6 +1,6 @@
 /* common ----------------------------------------------------------------------------------------------------- */
 *{padding:0; margin: 0; box-sizing: border-box; font-family: '맑은 고딕', sans-serif; color:#333333;}
-body{height: 100%; overflow: overlay;}
+body{height: 850px; overflow: overlay;}
 
 li{list-style: none;}
 a{ text-decoration: none; color:inherit;}
@@ -44,21 +44,19 @@ ul.lv2 li:hover a{color:#333; background: #fff;}
 
 /*content -----------------------------------------------------------------------------------------------------*/
 .content{
-    margin-top: 5%; 
-    margin-left:33%; 
-    margin-right: 30%; 
-    margin-bottom: 188px; 
+    margin-top: 5%;
+    margin-left:35%; 
+    margin-right: 27%; 
     padding-left: 80px; 
-    padding-top: 50px; 
-    padding-right: 70px;
+    padding-top: 40px; 
+    padding-right: 80px; 
+    padding-bottom: 40px;
     display: block; 
-    height: 450px;
     border: 1px solid rgb(228, 89, 89);
 }
 
-.content table{margin: 0 auto; width: auto; padding-top: 30px;}
-.content h2{margin-top: 10px; margin-left: 50px;}
-
+.content table{margin: 0 auto; width: auto; margin-top: 15px;}
+.content h2{margin-top: 15px;}
 
 
 button, .submit{padding:2px; background-color: rgb(255, 239, 239); border: 1px solid rgb(204, 57, 57); border-radius: 3px; width: 75px; height: 25px;}
@@ -68,9 +66,10 @@ button:hover, .submit:hover{background-color: rgb(255, 219, 219);}
 th{background-color: rgb(255, 218, 218); padding: 3px;}
 td{padding: 10px;}
 
-.textbox, .id{width: 200px; height: 25px; background-color: rgb(255, 245, 245); border: 1px solid rgb(228, 89, 89); border-radius: 3px;}
-.textbox:focus{ background-color: rgb(255, 235, 235);}
-.textbox:focus, .id:focus{outline: none;}
+textarea{resize: none; height: 200px; width: 300px; background-color: rgb(255, 245, 245); border: 1px solid rgb(228, 89, 89); border-radius: 3px; overflow: auto;}
+.textbox, select{width: 300px; height: 25px; background-color: rgb(255, 245, 245); border: 1px solid rgb(228, 89, 89); border-radius: 3px;}
+.textbox:focus, textarea:focus{background-color: rgb(255, 235, 235);}
+.textbox:focus, textarea:focus, select:focus{outline: none;}
 .id{background-color: rgb(247, 224, 224);}
 
 

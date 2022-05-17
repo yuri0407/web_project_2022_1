@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">	
-    <link rel="stylesheet" href="./css/br_managerBookList.css">
+    <link rel="stylesheet" href="./css/br_managerQuestionList.css">
     <script src="./script/jquery-3.6.0.js"></script>
     <script src="./script/script.js"></script>
 	<title>도서목록</title>
@@ -85,46 +85,33 @@
 	
 	
 	
-	<!-- 리뷰영역  -->
+	<!-- 질문목록 영역 -->
+    <div class="content">
 	
-	<div class="content">
-	
-		<h2>도서목록</h2>
-	
-	
-		<!-- 검색영역 -->
-		
-		<div class="search">			
-			<label>도서명</label>
-			<input type="text" name="bName" size="30">
-			<button>검색</button>
-			<button onclick="location.href='br_insertBookInfo.html'">등록하기</button>
-		</div>
+		<h2>Q&A</h2>
 
+	
+	
 		
         <div class="tablearea">
             <table>
                 <tr>
-                    <th style="width: 3%">bNo.</th>
-                    <th style="width: 30%">도서명</th>
-                    <th style="width: 15%">저자명</th>
-                    <th style="width: 15%">출판사</th>
-                    <th style="width: 10%">출판일</th>
-                    <th style="width: 7%">분류번호</th>
+                    <th style="width: 5%">No.</th>
+                    <th style="width: 20%">닉네임</th>
+                    <th style="width: 60%">질문내용</th>
+                    <th>날짜</th>
                 </tr>
-                <tr class="row" onclick="location.href='br_editBookInfo.html'">
+                <tr class="row" onclick="location.href='br_editQuestion.html'">
                     <td>1</td>
-                    <td>the midnight library</td>
-                    <td>Haig, matt</td>
-                    <td>Cannongate</td>
-                    <td>2021-02-18</td>
-                    <td>800</td>
+                    <td>유리</td>      
+                    <td>로그인과 관련해서 질문있습니다.</td>      
+                    <td>2022-05-15</td>
                 </tr>
 
             </table>
         </div>
 	
-	</div>
+    </div>
 	
 	
 		<!-- footer 영역  -->
