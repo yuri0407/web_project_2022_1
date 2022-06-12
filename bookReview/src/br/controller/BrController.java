@@ -129,9 +129,24 @@ public class BrController extends HttpServlet {
     		viewPage = "/WEB-INF/view/br_managerNoticeList.jsp";
     	}
     	
-    	//공지사항(관리자)
-    	else if(com!=null && com.trim().equals("br_managerNoticeList")) {
-    		viewPage = "/WEB-INF/view/br_managerNoticeList.jsp";
+    	//도서정보 등록
+    	else if(com!=null && com.trim().equals("br_insertBookInfo")) {
+    		viewPage = "/WEB-INF/view/br_insertBookInfo.jsp";
+    	}
+    	
+    	//도서정보 수정
+    	else if(com!=null && com.trim().equals("br_editBookInfo")) {
+    		viewPage = "/WEB-INF/view/br_editBookInfo.jsp";
+    	}
+    	
+    	//공지사항 등록
+    	else if(com!=null && com.trim().equals("br_insertNotice")) {
+    		viewPage = "/WEB-INF/view/br_insertNotice.jsp";
+    	}
+    	
+    	//공지사항 수정
+    	else if(com!=null && com.trim().equals("br_editNotice")) {
+    		viewPage = "/WEB-INF/view/br_editNotice.jsp";
     	}
     	
     	

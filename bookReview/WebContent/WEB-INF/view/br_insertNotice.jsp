@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="wrap">
-	<%@include file="br_menu.jsp" %>
+	<%@include file="br_managerMenu.jsp" %>
 
 
     
@@ -26,7 +26,7 @@
     <div class="content">
         <h2>공지사항 등록</h2>
     
-        <form action="br_managerNoticeList.jsp" method="post">
+        <form action="br_managerNoticeList.do" method="post">
         
             <table>
                 <tr>

@@ -52,7 +52,7 @@
                     <th style="width: 10%">출판일</th>
                     <th style="width: 7%">분류번호</th>
                 </tr>
-                <tr class="row" onclick="location.href='br_editBookInfo.jsp'">
+                <tr class="row" onclick="location.href='br_editBookInfo.do'">
                     <td>1</td>
                     <td>the midnight library</td>
                     <td>Haig, matt</td>

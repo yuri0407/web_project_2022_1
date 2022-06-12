@@ -33,7 +33,7 @@
 	
 		
 		<div class="btn">		
-			<button onclick="location.href='br_insertNotice.jsp'">등록하기</button>
+			<button onclick="location.href='br_insertNotice.do'">등록하기</button>
 		</div>
 
 		
@@ -44,7 +44,7 @@
                     <th style="width: 70%">공지제목</th>
                     <th>날짜</th>
                 </tr>
-                <tr class="row" onclick="location.href='br_editNotice.jsp'">
+                <tr class="row" onclick="location.href='br_editNotice.do'">
                     <td>1</td>
                     <td>신규등록도서 목록입니다.</td>      
                     <td>2022-05-15</td>

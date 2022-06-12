@@ -27,7 +27,7 @@
         <div class="content">
             <h2>도서정보 등록</h2>
         
-            <form action="br_managerBookList.jsp" method="post">
+            <form action="br_managerBookList.do" method="post">
             
                 <table>
                     <tr>
@@ -81,7 +81,7 @@
                     <tr>
                         <td></td>
                         <td class="btn">
-                            <button onclick="location.href='br_managerBookList.jsp'">돌아가기</button>
+                            <button onclick="location.href='br_managerBookList.do'">돌아가기</button>
                             <input type="submit" value= "등록하기" class="submit">
                         </td>
                     </tr>
