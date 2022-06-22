@@ -42,8 +42,8 @@
                     <th style="width:60%">제목</th>
                     <th>날짜</th>
                 </tr>
-                <tr class="row" onclick="location.href='br_questionDetail.do?qNo=${dto.qNo}'">
                 <c:forEach var="dto" items="${dtos}">
+                <tr class="row" onclick="location.href='br_questionDetail.do?qNo=${dto.qNo}'">
                     <td>${dto.qNo }</td>
                     <td>${dto.qTitle }</td>
                     <td>${dto.qDate }</td>

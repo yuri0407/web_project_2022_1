@@ -71,8 +71,9 @@
 
 			<div class="tablearea">
 				<table>
-					<c:forEach var="dto" items="${dtos}">
-					<tr class="row" onclick="location.href='br_noticeDetail.do'">
+					<c:forEach var="dto" items="${notice}">
+					<tr class="row" onclick="location.href='br_noticeDetail.do?noNum=${dto.noNum}'">
+						<td>${dto.noNum }</td>
 						<td>${dto.nTitle }</td>
 						<td style="width: 130px">${dto.nDate }</td>
 					</tr>
@@ -89,10 +90,13 @@
 
 			<div class="tablearea">
 				<table>
-					<tr class="row" onclick="location.href='br_questionDetail.do'">
-						<td>로그인과 관련해서 질문있습니다.</td>
-						<td style="width: 130px">2022-05-15</td>
+					<c:forEach var="dto" items="${dtos}">
+					<tr class="row" onclick="location.href='br_questionDetail.do?qNo=${dto.qNo}'">
+						<td>${dto.qNo }</td>
+						<td>${dto.qTitle }</td>
+						<td style="width: 130px">${dto.qDate }</td>
 					</tr>
+					</c:forEach>
 				</table>
 			</div>
 		

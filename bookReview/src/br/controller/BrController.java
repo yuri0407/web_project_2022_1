@@ -18,7 +18,9 @@ import br.service.BrService;
 import br.service.ExplanationService;
 import br.service.MemberInsertService;
 import br.service.NoticeListService;
+import br.service.NoticeSearchService;
 import br.service.QuestionListService;
+import br.service.QuestionSearchService;
 import br.service.ReviewListService;
 import br.service.ReviewSaveService;
 import br.service.ReviewSearchService;
@@ -39,8 +41,11 @@ public class BrController extends HttpServlet {
     	
     	//화면요청 메인화면
     	if(com!=null && com.trim().equals("br_main")) {
-    		BrService service = new NoticeListService();
-    		service.execute(request, response);
+    		BrService noticeService = new NoticeListService();
+    		noticeService.execute(request, response);
+    		
+    		BrService questionService = new QuestionListService();
+    		questionService.execute(request, response);
     		viewPage = "./WEB-INF/view/br_main.jsp";
     	}
     	
@@ -89,6 +94,16 @@ public class BrController extends HttpServlet {
     		viewPage = "/WEB-INF/view/br_questionList.jsp";
     	}
     	
+    	//질문 상세보기
+    	else if(com!=null && com.trim().equals("br_questionDetail")) {
+    		BrService service = new QuestionSearchService();
+    		service.execute(request, response);
+    		viewPage = "/WEB-INF/view/br_questionDetail.jsp";
+    	}
+    	
+    	
+    	
+    	
     	//도서추가요청
     	else if(com!=null && com.trim().equals("br_bookRequest")) {
     		viewPage = "/WEB-INF/view/br_bookRequest.jsp";
@@ -113,14 +128,9 @@ public class BrController extends HttpServlet {
     	
     	//공지사항 상세(사용자)
     	else if(com!=null && com.trim().equals("br_noticeDetail")) {
-    		BrService service = new NoticeListService();
+    		BrService service = new NoticeSearchService();
     		service.execute(request, response);
     		viewPage = "/WEB-INF/view/br_noticeDetail.jsp";
-    	}
-    	
-    	//질문 상세보기
-    	else if(com!=null && com.trim().equals("br_questionDetail")) {
-    		viewPage = "/WEB-INF/view/br_questionDetail.jsp";
     	}
     	
     	//도서상세보기

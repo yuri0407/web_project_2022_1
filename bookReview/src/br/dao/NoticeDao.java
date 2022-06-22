@@ -11,6 +11,7 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 import br.dto.NoticeDto;
+import br.dto.QuestionDto;
 import br.dto.ReviewDto;
 
 /**==================================================
@@ -90,43 +91,40 @@ public class NoticeDao {
 	}
 	
 	
+	//해당하는 공지정보 가져오기
+	public ArrayList<NoticeDto> search(int noNum){
+		ArrayList<NoticeDto> dtos = new ArrayList<NoticeDto>();
+		String sql = "select * from br_notice where noNum=?";
+				
+		try(
+			Connection con = getConnection();
+			PreparedStatement pstmt = con.prepareStatement(sql);
+			
+		){
+			pstmt.setInt(1, noNum);
+			
+			ResultSet rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				String nTitle = rs.getString("nTitle");
+				String nContent = rs.getString("nContent");
+				String nDate = rs.getString("nDate");
+				NoticeDto dto = new NoticeDto(noNum, nTitle, nContent, nDate);
+				
+				dtos.add(dto);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return dtos;
+	}
+	
+	
 	
 	//메소드 : 1. public / private
 	//2. 반환 데이터 타입(output)
 	//3. 입력 매개변수(input)
-	
-	
-	//search
-		public ArrayList<ReviewDto> search(String bname){
-			ArrayList<ReviewDto> dtos = new ArrayList<ReviewDto>();
-			String sql = "select rNum, id, bname, content from br_review where";
-					
-			try(
-				
-				Connection con = getConnection();
-				PreparedStatement pstmt = con.prepareStatement(sql);	
-//				Statement stmt = con.createStatement();
-				ResultSet rs = pstmt.executeQuery();
-			){
-				if(bname != null && !bname.equals(""))
-				sql += " like '%"+bname.trim()+"%'";
-//				pstmt.setString(1, dto.getBname());
-				
-				while(rs.next()) {
-					int rNum = rs.getInt("rNum");
-					String id = rs.getString("id");
-					String bname2 = rs.getString("bname");
-					String content = rs.getString("content");
-					ReviewDto dto = new ReviewDto(rNum, id, bname2, content);
-					
-					dtos.add(dto);
-				}
-				
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			return dtos;
-		}
 		
 		
 	

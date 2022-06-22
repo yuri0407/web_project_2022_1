@@ -39,8 +39,8 @@
                     <th style="width: 70%">공지제목</th>
                     <th>날짜</th>
                 </tr>
-                <tr class="row" onclick="location.href='br_noticeDetail.do'">
-                <c:forEach var="dto" items="${dtos}">
+                <c:forEach var="dto" items="${notice}">
+                <tr class="row" onclick="location.href='br_noticeDetail.do?noNum=${dto.noNum}'">
                     <td>${dto.noNum }</td>
                     <td>${dto.nTitle }</td>      
                     <td>${dto.nDate }</td>

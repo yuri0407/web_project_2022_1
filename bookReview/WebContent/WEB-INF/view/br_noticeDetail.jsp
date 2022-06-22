@@ -33,7 +33,7 @@
 
             
             <div class="detail">
-            	<c:forEach var="dto" items="${dtos}">
+            	<c:forEach var="dto" items="${notice}">
                 <h2>${dto.nTitle }</h2>
                 <div class="date">등록일 : ${dto.nDate }</div>
                 <hr>
