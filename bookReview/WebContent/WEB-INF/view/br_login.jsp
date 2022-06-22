@@ -19,7 +19,8 @@
 <body>
 	
 	<div class="wrap">
-		<%@include file="br_menu.jsp" %>
+	<%@include file="header.jsp" %>
+	<%@include file="br_menu.jsp" %>
 
 	
 	
@@ -28,7 +29,7 @@
 	
 		<h2>로그인</h2>
 		<div class="tablearea">
-			
+			<form method="post">
 			<table>
 				<tr>
 					<td><label>아이디</label></td>
@@ -43,10 +44,12 @@
 		
 
 			<div class="btn">
-				<button onclick="location.href='br_main.do'">로그인</button>
-				<button onclick="location.href='br_idpwFind.do'" class="searchbtn">아이디/비밀번호 찾기</button>
-				<button onclick="location.href='br_SignUp.do'">회원가입</button>
+				<input type="submit" value="로그인" class="submit" formaction="br_loginPro.do">
+				<input type="submit" value="아이디/비밀번호 찾기" class="searchbtn submit" formaction="br_idpwFind.do">
+				<input type="submit" value="회원가입" class="submit" formaction="br_signUp.do">
 			</div>
+			
+			</form>
 			
 			<div class="manager">
 				<button onclick="location.href='br_managerLogin.do'">관리자로그인</button>

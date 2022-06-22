@@ -43,10 +43,10 @@ ul.lv2 li:hover a{color:#333; background: #fff;}
 
 
 /*content -----------------------------------------------------------------------------------------------------*/
-.content{margin-top: 3%; margin-left:30%; margin-right: 25%; margin-bottom: 120px; padding-left: 150px; padding-top: 50px; padding-right: 70px; display: block; height: 700px; border: 1px solid rgb(228, 89, 89);}
+.content{margin-top: 3%; margin-left:30%; margin-right: 25%; margin-bottom: 120px; padding-left: 80px; padding-top: 60px; display: block; height: 900px; border: 1px solid rgb(228, 89, 89);}
 
 .content >*{width: 600px; align-items: center;}
-.content table{width: 0 auto; margin-top: 15px;}
+.content table{margin-top: 15px;}
 .content h2{margin-left: 0;}
 .content h3{font-size: 18px; font-weight: 600; margin-bottom: 10px;}
 
@@ -56,10 +56,10 @@ button:hover, .submit:hover{background-color: rgb(255, 219, 219);}
 .btn{text-align: right;}
 
 th{background-color: rgb(255, 218, 218); padding: 3px;}
-td{padding: 10px;}
+td{padding: 10px; font-size:10pt;}
 
-textarea{resize: none; height: 200px; width: 300px; background-color: rgb(255, 245, 245); border: 1px solid rgb(228, 89, 89); border-radius: 3px; overflow: auto;}
-.textbox, select{width: 300px; height: 25px; background-color: rgb(255, 245, 245); border: 1px solid rgb(228, 89, 89); border-radius: 3px;}
+textarea{resize: none; height: 400px; width: 480px; background-color: rgb(255, 245, 245); border: 1px solid rgb(228, 89, 89); border-radius: 3px; overflow: auto;}
+.textbox, select{width: 480px; height: 25px; background-color: rgb(255, 245, 245); border: 1px solid rgb(228, 89, 89); border-radius: 3px;}
 .textbox:focus, textarea:focus{ background-color: rgb(255, 235, 235);}
 .textbox:focus, textarea:focus, select:focus{outline: none;}
 .id{background-color: rgb(247, 224, 224);}

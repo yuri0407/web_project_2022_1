@@ -19,6 +19,7 @@
 <body>
 	
     <div class="wrap">
+    <%@include file="header.jsp" %>
         <%@include file="br_menu.jsp" %>
         
         
@@ -27,7 +28,7 @@
         <div class="content">
             <h2>관리자 로그인</h2>
             
-            <form action="br_managerBookList.do">
+            <form action="br_managerLoginPro.do">
                 <table>
                     
                     <tr>
@@ -42,7 +43,7 @@
                     
                     <tr>
                         <td>비밀번호</td>
-                        <td><input type="text" name="pwd" class="textbox"></td>
+                        <td><input type="password" name="pwd" class="textbox"></td>
                     </tr>
                     
                     <tr>

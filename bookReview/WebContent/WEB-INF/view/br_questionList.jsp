@@ -7,6 +7,7 @@
 -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -18,6 +19,7 @@
 </head>
 <body>
     <div class="wrap">
+    <%@include file="header.jsp" %>
         <%@include file="br_menu.jsp" %>
 
 
@@ -36,17 +38,17 @@
         <div class="tablearea">
             <table>
                 <tr>
-                    <th style="width: 5%">No.</th>
-                    <th style="width: 20%">닉네임</th>
-                    <th style="width: 60%">질문내용</th>
+                    <th style="width: 10%">No.</th>
+                    <th style="width:60%">제목</th>
                     <th>날짜</th>
                 </tr>
-                <tr class="row" onclick="location.href='br_questionDetail.jsp'">
-                    <td>1</td>
-                    <td>유리</td>      
-                    <td>로그인과 관련해서 질문있습니다.</td>      
-                    <td>2022-05-15</td>
+                <tr class="row" onclick="location.href='br_questionDetail.do?qNo=${dto.qNo}'">
+                <c:forEach var="dto" items="${dtos}">
+                    <td>${dto.qNo }</td>
+                    <td>${dto.qTitle }</td>
+                    <td>${dto.qDate }</td>
                 </tr>
+                </c:forEach>
 
             </table>
         </div>

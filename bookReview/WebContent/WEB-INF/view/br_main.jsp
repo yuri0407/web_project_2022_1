@@ -5,8 +5,11 @@
 	프로그램 설명 : 사이트 메인 화면
 	
 -->
+<%@page import="br.dao.MemberDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,11 +22,7 @@
 <body>
 
     <div class="wrap">
-		<!-- header 영역  --> 	
-		<header>
-			<div class="headerBg"></div>
-			<a href="br_main.do"><img src="./images/로고.png" alt="사이트로고"></a>
-			<div class="head"><a href="br_login.do">로그인</a> | <a href="br_signUp.do">회원가입</a></div>
+		<%@include file="header.jsp" %>
 			
 			<!-- 메인메뉴영역  -->
 			<nav>			
@@ -46,7 +45,6 @@
 					<li class="lv1">
 						<a href="#">마이페이지</a>
 						<ul class="lv2">
-							<li><a href="br_myReview.do">My리뷰</a></li>
 							<li><a href="br_updateMemInfo.do">회원정보수정</a></li>
 							<li><a href="br_memWithdrawal.do">회원탈퇴</a></li>
 						</ul>
@@ -73,10 +71,12 @@
 
 			<div class="tablearea">
 				<table>
+					<c:forEach var="dto" items="${dtos}">
 					<tr class="row" onclick="location.href='br_noticeDetail.do'">
-						<td>신규등록도서 목록입니다.</td>
-						<td style="width: 130px">2022-05-15</td>
+						<td>${dto.nTitle }</td>
+						<td style="width: 130px">${dto.nDate }</td>
 					</tr>
+					</c:forEach>
 				</table>
 			</div>
 		

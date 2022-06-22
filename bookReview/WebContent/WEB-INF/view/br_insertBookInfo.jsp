@@ -18,8 +18,8 @@
 </head>
 <body>
     <div class="wrap">
-    
-        <%@include file="br_menu.jsp" %>
+    <%@include file="header.jsp" %>
+    <%@include file="br_managerMenu.jsp" %>
 
         
         
@@ -27,33 +27,33 @@
         <div class="content">
             <h2>도서정보 등록</h2>
         
-            <form action="br_managerBookList.do" method="post">
+            <form method="post">
             
                 <table>
                     <tr>
                         <td>도서명</td>
-                        <td><input type="text" name="mNum" class="textbox"></td>
+                        <td><input type="text" name="bname" class="textbox"></td>
                     </tr>
                     
                     <tr>
                         <td>저자</td>
-                        <td><input type="text" name="id" class="textbox"></td>
+                        <td><input type="text" name="writer" class="textbox"></td>
                     </tr>
                     
                     <tr>
                         <td>출판사</td>
-                        <td><input type="text" name="pwd" class="textbox"></td>
+                        <td><input type="text" name="publisher" class="textbox"></td>
                     </tr>
 
                     <tr>
                         <td>출판일</td>
-                        <td><input type="text" name="pwd" class="textbox"></td>
+                        <td><input type="text" name="pdate" class="textbox"></td>
                     </tr>
                     
                     <tr>
                         <td>분류번호</td>
                         <td>
-                            <select>
+                            <select name="category">
                                 <option>100</option>
                                 <option>200</option>
                                 <option>300</option>
@@ -69,20 +69,14 @@
                     
                     <tr>
                     <td>도서 설명</td>
-                    <td><textarea name = "detail" rows="4" cols=""></textarea></td>
-                    </tr>
-                    
-                    <tr>
-                    <td>도서 이미지</td>
-                    <td><input type="text" name="img" class="textbox"></td>
-                    <td><input type="submit" value="찾아보기" class="submit"></td>
+                    <td><textarea name = "bContent" rows="4" cols=""></textarea></td>
                     </tr>
                     
                     <tr>
                         <td></td>
                         <td class="btn">
-                            <button onclick="location.href='br_managerBookList.do'">돌아가기</button>
-                            <input type="submit" value= "등록하기" class="submit">
+                        	<input type="submit" value="돌아가기" formaction="br_managerBookList.do" class="submit">
+                            <input type="submit" value= "등록하기" class="submit" formaction="bookSave.do">
                         </td>
                     </tr>
                 </table>

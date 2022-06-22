@@ -11,13 +11,14 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="./css/br_managerNoticeList.css">
+	<link rel="stylesheet" href="./css/br_noticeList.css">
 	<script src="./script/jquery-3.6.0.js"></script>
 	<script src="./script/script.js"></script>
 	<title>공지사항</title>
 </head>
 <body>
     <div class="wrap">	
+    <%@include file="header.jsp" %>
     	<%@include file="br_managerMenu.jsp" %>
     
     
@@ -40,7 +41,7 @@
         <div class="tablearea">
             <table>
                 <tr>
-                    <th style="width: 6%;">No.</th>
+                    <th style="width: 10%;">No.</th>
                     <th style="width: 70%">공지제목</th>
                     <th>날짜</th>
                 </tr>

@@ -1,8 +1,8 @@
 <!--
 
-	작성자 : 
+	작성자 : 정유리
 	변경이력 : 
-	프로그램 설명 : 
+	프로그램 설명 : 관리자 메뉴
  
 -->
 
@@ -13,11 +13,11 @@
 <meta charset="UTF-8">
 </head>
 <body>
-	<!-- header 영역  -->
-	<header>
-        <div class="headerBg"></div>
-        <a href="br_managerBookList.do"><img src="./images/로고.png" alt="사이트로고"></a>
-        <div class="head">관리자님 안녕하세요! | <a href="br_main.do">로그아웃</a></div>
+<!-- 	<!-- header 영역  -->
+<!-- 	<header> -->
+<!--         <div class="headerBg"></div> -->
+<!--         <a href="br_managerBookList.do"><img src="./images/로고.png" alt="사이트로고"></a> -->
+<!--         <div class="head">관리자님 안녕하세요! | <a href="br_main.do">로그아웃</a></div> -->
         
         <!-- 메인메뉴영역  -->
         <nav>			

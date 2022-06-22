@@ -7,6 +7,8 @@
 -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +21,7 @@
 <body>
 
 	<div class="wrap">
-	
+	<%@include file="header.jsp" %>
 		<%@include file="br_managerMenu.jsp" %>
 	
 	
@@ -52,15 +54,16 @@
                     <th style="width: 10%">출판일</th>
                     <th style="width: 7%">분류번호</th>
                 </tr>
-                <tr class="row" onclick="location.href='br_editBookInfo.do'">
-                    <td>1</td>
-                    <td>the midnight library</td>
-                    <td>Haig, matt</td>
-                    <td>Cannongate</td>
-                    <td>2021-02-18</td>
-                    <td>800</td>
+                <c:forEach var="dto" items="${dtos}">
+                <tr class="row" onclick="location.href='br_editBookInfo.do?bno=${dto.bno}'">
+                    <td>${dto.bno }</td>
+                    <td>${dto.bname }</td>
+                    <td>${dto.writer }</td>
+                    <td>${dto.publisher }</td>
+                    <td>${dto.pdate }</td>
+                    <td>${dto.category }</td>
                 </tr>
-
+				</c:forEach>
             </table>
         </div>
 	

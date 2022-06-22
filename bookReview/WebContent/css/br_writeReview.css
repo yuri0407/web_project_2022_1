@@ -1,5 +1,5 @@
 /* common ----------------------------------------------------------------------------------------------------- */
-*{padding:0; margin: 0; box-sizing: border-box; font-family: '맑은 고딕', sans-serif; color:#333333;}
+*{padding:0; margin: 0; box-sizing: border-box; font-family: '留묒� 怨좊뵓', sans-serif; color:#333333;}
 body{height: 100%; overflow: overlay;}
 
 li{list-style: none;}
@@ -42,7 +42,7 @@ ul.lv2 li:hover a{color:#333; background: #fff;}
 
 
 /*content -----------------------------------------------------------------------------------------------------*/
-.content{margin-top: 4%; margin-left:34%; margin-right: 34%; margin-bottom: 155px; padding-left: 50px; padding-top: 50px; display: block; height: 500px; border: 1px solid rgb(228, 89, 89);}
+.content{margin-top: 4%; margin-left:34%; margin-right: 34%; padding-left: 50px; padding-top: 50px; display: block; height: 550px; border: 1px solid rgb(228, 89, 89);}
 .content table{width: 0 auto; margin-top: 30px;}
 .content h2{margin-left: 0;}
 

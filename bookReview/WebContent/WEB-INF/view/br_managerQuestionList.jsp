@@ -18,6 +18,7 @@
 </head>
 <body>
 	<div class="wrap">
+	<%@include file="header.jsp" %>
 		<%@include file="br_managerMenu.jsp" %>
 	
 	

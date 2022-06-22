@@ -5,19 +5,17 @@
 	프로그램 설명 : 메인&서브 메뉴
 	
 -->
+<%@page import="br.dao.MemberDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 </head>
 <body>
-	<!-- header 영역  -->
-		<header>
-		<div class="headerBg"></div>
-		<a href="br_main.do"><img src="./images/로고.png" alt="사이트로고"></a>
-		<div class="head">ooo님 안녕하세요! | <a href="br_main.do">로그아웃</a></div>
 		
 		
 	<!-- 메인메뉴영역  -->
@@ -41,7 +39,6 @@
 			<li class="lv1">
 				<a href="#">마이페이지</a>
 				<ul class="lv2">
-					<li><a href="br_myReview.do">My리뷰</a></li>
 					<li><a href="br_updateMemInfo.do">회원정보수정</a></li>
 					<li><a href="br_memWithdrawal.do">회원탈퇴</a></li>
 				</ul>
@@ -77,7 +74,6 @@
 		<ul class="subLv1">
 			<li>마이페이지</li>
 			<ul class="subLv2">
-				<li><a href="br_myReview.do">My리뷰</a></li>
 				<li><a href="br_updateMemInfo.do">회원정보수정</a></li>
 				<li><a href="br_memWithdrawal.do">회원탈퇴</a></li>
 			</ul>
